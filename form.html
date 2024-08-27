@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Sponsorship Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Visa Sponsorship Application Form</h1>
+        </div>
+        <div class="content">
+            <form id="visaForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" >
+                </div>
+
+               
+
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" >
+                        <option value="">Select your country</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Morocco">Morocco</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Ivory Coast">Ivory Coast</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        <option value="Mali">Mali</option>
+                        <option value="Malawi">Malawi</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Senegal">Senegal</option>
+                    </select>
+                </div>
+                 
+                <div class="form-group">
+                    <label for="visaType">Type of Visa:</label>
+                    <select id="visaType" name="visaType" >
+                        <option value="work">Work Visa</option>
+                        <option value="study">Study Visa</option>
+                        <option value="tourist">Tourist Visa</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="form-radio-group">
+                        <input type="radio" id="male" name="gender" value="male" >
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                 
+                <div class="form-group">
+                    <label for="Education">Education:</label>
+                    <select id="Education" name="Education" >
+                        <option value="">Select your country</option>
+                        <option value="Other">other</option>
+                        <option value="Degree">Degree</option>
+                        <option value="Masters">Masters</option>
+                        <option value="Phd">Phd</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dateOfBirth">Date of Birth:</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" >
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Reason for Visa:</label>
+                    <textarea id="reason" name="reason" ></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
