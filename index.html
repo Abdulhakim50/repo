@@ -12,12 +12,14 @@
     <style>
       /* Navbar Styles */
       .navbar {
-        background: linear-gradient(135deg, #d32f2f, #b71c1c); /* Canadian red gradient */
+        background: linear-gradient(
+          135deg,
+          #d32f2f,
+          #b71c1c
+        ); /* Canadian red gradient */
         color: white;
         padding: 15px 20px;
-   
-        
-       
+
         z-index: 1000;
       }
 
@@ -109,6 +111,18 @@
 
       /* Responsive Styles */
       @media (max-width: 768px) {
+        .hero-content h1 {
+          font-size: 2.5em;
+        }
+
+        .hero-content p {
+          font-size: 1em;
+        }
+
+        .start-btn {
+          font-size: 16px;
+          padding: 10px 20px;
+        }
         .menu-toggle {
           display: flex;
         }
@@ -132,37 +146,13 @@
         }
       }
 
-      @media (min-width: 769px) {
-        .nav-links {
-          display: flex !important; /* Always display nav-links on larger screens */
-        }
-
-        .menu-toggle {
-          display: none;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .navbar {
-          padding: 10px 15px;
-        }
-
-        .navbar .cont {
-          padding-left: 10px;
-          padding-right: 10px;
-        }
-
-        .logo {
-          font-size: 1.5em;
-        }
-      }
-
       /* Hero Section Styles */
       .hero {
         position: relative;
         height: 100vh; /* Full viewport height */
         background: url("https://img.freepik.com/premium-photo/engineers-constructing-industrial-background_118124-39065.jpg?w=2000")
-          no-repeat center center/cover;
+          no-repeat center center;
+        background-size: cover; /* Ensures the image covers the entire section */
         color: white;
         display: flex;
         justify-content: center;
@@ -224,6 +214,48 @@
           #d32f2f
         ); /* Darker gradient on hover */
         transform: scale(1.05); /* Slightly scale up on hover */
+      }
+
+      @media (min-width: 769px) {
+        .nav-links {
+          display: flex !important; /* Always display nav-links on larger screens */
+        }
+
+        .menu-toggle {
+          display: none;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero {
+          height: 81vh; /* Adjust height for smaller screens */
+          background-position: center top; /* Focus on the top part of the image */
+        }
+
+        .hero-content h1 {
+          font-size: 2em;
+        }
+
+        .hero-content p {
+          font-size: 0.9em;
+        }
+
+        .start-btn {
+          font-size: 14px;
+          padding: 8px 16px;
+        }
+        .navbar {
+          padding: 10px 15px;
+        }
+
+        .navbar .cont {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        .logo {
+          font-size: 1.5em;
+        }
       }
     </style>
   </head>
